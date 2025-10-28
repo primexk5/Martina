@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <About />
-      <Objectives />
+      <Objectives /> */}
       <Footer />
     </>
   )
