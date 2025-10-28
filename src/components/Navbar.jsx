@@ -1,7 +1,11 @@
 import React from 'react'
+import { useState } from 'react'
 // import { CiMenuFries } from "react-icons/ci";
 
 const Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div>
       <nav className='lg:flex-row lg:flex items-center justify-between'>
@@ -12,11 +16,11 @@ const Navbar = () => {
            <p className='text-sm'>Centre for Sustainable</p>
         </div>
         {/* <CiMenuFries/> */}
-        <p className='lg:hidden'>M</p>
+        <p onClick={() => setIsOpen(!isOpen)} className='lg:hidden'>{!isOpen ? "M" : "C"}</p>
       </div>
 
         <div>
-          <ul className=' text-center lg:text-start flex flex-col lg:flex-row gap-7'>
+          <ul className={!isOpen ?  "hidden" : 'text-center lg:text-start flex flex-col lg:flex-row gap-5 py-4 lg:gap-7'}>
             <li className='cursor-pointer'>Home</li>
             <li className='cursor-pointer'>About</li>
             <li className='cursor-pointer'>Services</li>
