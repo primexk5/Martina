@@ -23,10 +23,10 @@ const Navbar = () => {
 
         <div>
           <ul className={!isOpen ?  "hidden lg:flex  py-4 lg:gap-7" : 'text-center lg:text-start flex flex-col lg:flex-row gap-5 py-4 lg:gap-7'}>
-            <li className='cursor-pointer'>Home</li>
-            <li className='cursor-pointer'>About</li>
-            <li className='cursor-pointer'>Services</li>
-            <li className='cursor-pointer'>Contact</li>
+            <li className='cursor-pointer font-bold text-blue-800 hover:text-blue-400'>Home</li>
+            <li className='cursor-pointer hover:text-blue-800'>About</li>
+            <li className='cursor-pointer hover:text-blue-800'>Services</li>
+            <li className='cursor-pointer hover:text-blue-800'>Contact</li>
           </ul>
         </div>
 
