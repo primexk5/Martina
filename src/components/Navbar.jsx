@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 // import { CiMenuFries } from "react-icons/ci";
+import {Menu, X } from 'lucide-react';
+
 
 const Navbar = () => {
 
@@ -15,8 +17,8 @@ const Navbar = () => {
            <h1 className='text-4xl font-semibold text-blue-800'>Martina</h1>
            <p className='text-sm text-gray-500'>Centre for Sustainable</p>
         </div>
-        {/* <CiMenuFries/> */}
-        <p onClick={() => setIsOpen(!isOpen)} className='lg:hidden'>{!isOpen ? "M" : "C"}</p>
+        
+        <p onClick={() => setIsOpen(!isOpen)} className='lg:hidden'>{!isOpen ? <Menu className='text-3xl'/> : <X/>}</p>
       </div>
 
         <div>
