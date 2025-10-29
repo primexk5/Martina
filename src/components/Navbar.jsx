@@ -35,16 +35,16 @@ const Navbar = () => {
             }
           >
             <li>
-              <a href="#home" className='cursor-pointer font-bold text-blue-100 hover:text-blue-50'>Home</a>
+              <a href="/" className='cursor-pointer font-bold text-blue-100 hover:text-blue-50'>Home</a>
             </li>
             <li>
-              <a href="#about" className='cursor-pointer text-blue-100 hover:text-blue-50'>About</a>
+              <a onClick={() => setIsOpen(false)} href="#about" className='cursor-pointer text-blue-100 hover:text-blue-50'>About</a>
             </li>
 
             <Dropdown />
-            <li ><a className='cursor-pointer text-blue-100 hover:text-blue-50' href="">Team</a></li>
+            <li><a className='cursor-pointer text-blue-100 hover:text-blue-50' href="">Team</a></li>
 
-            <li className='cursor-pointer text-blue-100 hover:text-blue-50'>Contact</li>
+            <li onClick={() => setIsOpen(false)} className='cursor-pointer text-blue-100 hover:text-blue-50'>Contact</li>
           </ul>
         </div>
 
