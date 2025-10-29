@@ -4,7 +4,7 @@ import Dropdown from '../atoms/Dropdown';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);       // mobile menu toggle
+  const [isOpen, setIsOpen] = useState(false); 
 
   return (
     <div className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-900 to-slate-800 border-b-4 border-green-600  z-50 shadow-md">
