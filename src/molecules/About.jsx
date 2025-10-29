@@ -85,7 +85,7 @@ const About = () => {
             <div className="p-4 bg-white/20 rounded-full text-white mr-4">
               <FaBullseye className="h-8 w-8" />
             </div>
-            <h3 className="text-3xl font-bold text-white">Comprehensive Overview</h3>
+            <h3 className="text-3xl font-bold text-blue-100">Comprehensive Overview</h3>
           </div>
           <p className="text-lg  text-teal-50 leading-relaxed opacity-90 mb-6">
             At the dawn of the 21st century, developing nations like Nigeria are still saddled with basic problems such as poverty, characterized by malnutrition, illiteracy, disease, poor housing and environmental degradation. The Martina Centre works to address these multifaceted challenges through holistic community development programs. Our approach integrates sustainable agriculture, educational initiatives, health awareness campaigns, and microfinance services to empower individuals and families, fostering resilience and self-sufficiency.

@@ -16,11 +16,11 @@ sustainable impact.`,
 }) {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-20 lg:py-24">
+      <div className=" mx-auto  lg:px-80 px-6 py-20 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Copy */}
           <div className="lg:col-span-7">
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-blue-900">
+            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-blue-950">
               {title}
             </h2>
             <p className="mt-6 text-base md:text-lg leading-relaxed text-gray-700 whitespace-pre-line">
@@ -28,7 +28,7 @@ sustainable impact.`,
             </p>
             <button
               onClick={onCtaClick}
-              className="mt-8 inline-flex items-center rounded-md bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2"
+              className="mt-8 inline-flex items-center rounded-md bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2"
             >
               {ctaLabel}
             </button>
