@@ -34,17 +34,18 @@ const Navbar = () => {
                 : "text-center lg:text-start flex flex-col lg:flex-row gap-5 py-4 lg:gap-7"
             }
           >
-            <li>
-              <a href="#home" className='cursor-pointer font-bold text-blue-100 hover:text-blue-50'>Home</a>
-            </li>
-            <li>
-              <a href="#about" className='cursor-pointer text-blue-100 hover:text-blue-50'>About</a>
+            <li onClick={() => setIsOpen(false)}>
+              <a href="/" className='cursor-pointer font-bold text-blue-100 hover:text-blue-50'>Home</a>
             </li>
 
-            <Dropdown />
-            <li ><a className='cursor-pointer text-blue-100 hover:text-blue-50' href="">Team</a></li>
+            <li>
+              <a onClick={() => setIsOpen(false)} href="#about" className='cursor-pointer text-blue-100 hover:text-blue-50'>About</a>
+            </li>
 
-            <li className='cursor-pointer text-blue-100 hover:text-blue-50'>Contact</li>
+            <Dropdown onClick={() => setIsOpen(false)} />
+            <li onClick={() => setIsOpen(false)}><a className='cursor-pointer text-blue-100 hover:text-blue-50' href="">Team</a></li>
+
+            <li onClick={() => setIsOpen(false)} className='cursor-pointer text-blue-100 hover:text-blue-50'>Contact</li>
           </ul>
         </div>
 
