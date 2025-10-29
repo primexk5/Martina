@@ -21,7 +21,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className='lg:hidden cursor-pointer'
           >
-            {!isOpen ? <Menu className='text-3xl' /> : <X />}
+            {!isOpen ? <Menu className='text-3xl text-white' /> : <X />}
           </p>
         </div>
 
