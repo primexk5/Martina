@@ -11,14 +11,14 @@ const Hero = () => {
   ];
 
   return (
-    <div className="w-full bg-blue-50 text-gray-800">
+    <div id="home" className="w-full bg-gray-100 text-gray-800">
       <div className="max-w-7xl mx-auto flex flex-col justify-center items-center text-center px-6 py-24 md:py-32">
         
-        <div className="bg-blue-900 text-white  w-64 h-64 flex items-center justify-center font-black text-6xl mb-8">
+        <div className="bg-slate-800 text-white  w-64 h-64 flex items-center justify-center font-black text-6xl mb-8">
           MC
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-blue-900">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-gray-900">
           The Martina Centre for Sustainable Development
         </h1>
         
@@ -26,7 +26,7 @@ const Hero = () => {
           (A Non-Governmental Organization / Micro Finance Institution)
         </p>
 
-        <div className="bg-blue-50 border border-blue-200 px-6 py-4 rounded-xl shadow-sm mb-12 max-w-2xl">
+        <div className="bg-gray-200 border border-gray-300 px-6 py-4 rounded-xl shadow-sm mb-12 max-w-2xl">
           <p className="text-sm md:text-base font-semibold uppercase tracking-wider text-blue-600">
             In Special Consultative Status
           </p>
@@ -57,7 +57,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col items-center gap-8 w-full">
-              <div className="bg-blue-50 border border-blue-200 p-4 rounded-xl shadow-sm w-full max-w-xs">
+              <div className="bg-gray-200 border border-gray-300 p-4 rounded-xl shadow-sm w-full max-w-xs">
                 <p className="text-blue-900 text-sm font-semibold mb-2">Our Work Aligns With</p>
                 <img 
                   src="/logos.jpg" 
@@ -65,7 +65,7 @@ const Hero = () => {
                   className="w-full h-auto rounded" 
                 />
               </div>
-              <div className="bg-blue-50 border border-blue-200 p-4 rounded-xl shadow-sm w-full max-w-xs">
+              <div className="bg-gray-200 border border-gray-300 p-4 rounded-xl shadow-sm w-full max-w-xs">
                 <p className="text-blue-900 text-sm font-semibold mb-2">Our Focus Area</p>
                 <img 
                   src="/Nigeria.jpeg" 

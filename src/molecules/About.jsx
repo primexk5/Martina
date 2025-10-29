@@ -11,7 +11,7 @@ import {
 
 const About = () => {
   return (
-    <div className="bg-brand-dark py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+    <div id="about" className="bg-brand-dark py-16 sm:py-24 px-4  sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
        
@@ -26,7 +26,7 @@ const About = () => {
           <p className="mt-2 max-w-2xl text-lg font-medium text-brand-subtle mx-auto">
             (In Consultative Status with UN Ecosoc)
           </p>
-          <button className="mt-8 inline-flex items-center bg-blue-900 justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-brand-primary hover:bg-brand-primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary transition-all duration-300 transform hover:-translate-y-1">
+          <button className="mt-8 inline-flex items-center  bg-gradient-to-r from-gray-900 to-slate-800 justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-brand-primary hover:bg-brand-primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary transition-all duration-300 transform hover:-translate-y-1">
             Learn More About Us
             <FaArrowRight className="ml-3 -mr-1 h-5 w-5" />
           </button>
@@ -36,9 +36,9 @@ const About = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
          
-          <div className="bg-brand-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 flex flex-col items-start border border-blue-700 animate-fade-in-up animation-delay-200">
+          <div className="bg-brand-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 flex flex-col items-start border border-gray-700 animate-fade-in-up animation-delay-200">
             <div className="p-4 bg-brand-primary/10 rounded-full text-brand-primary mb-6">
-              <FaBookOpen className="h-8 w-8 text-blue-700" />
+              <FaBookOpen className="h-8 w-8 text-blue-800" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">Land Use and Agricultural Development Schemes</h3>
             <p className="text-brand-text leading-relaxed mb-6 flex-grow">
@@ -51,9 +51,9 @@ const About = () => {
           </div>
 
          
-          <div className="bg-brand-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 flex flex-col items-start border border-blue-700 animate-fade-in-up animation-delay-400">
+          <div className="bg-brand-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 flex flex-col items-start border border-gray-700 animate-fade-in-up animation-delay-400">
             <div className="p-4 bg-brand-secondary/10 rounded-full text-brand-secondary mb-6">
-              <FaFlask className="h-8 w-8 text-blue-700" />
+              <FaFlask className="h-8 w-8 text-blue-800" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">Research and Social Action</h3>
             <p className="text-brand-text leading-relaxed mb-6 flex-grow">
@@ -65,9 +65,9 @@ const About = () => {
             </button>
           </div>
 
-          <div className="bg-brand-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 flex flex-col items-start border border-blue-700 animate-fade-in-up animation-delay-600">
+          <div className="bg-brand-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 flex flex-col items-start border border-gray-700 animate-fade-in-up animation-delay-600">
             <div className="p-4 bg-brand-primary/10 rounded-full text-brand-primary mb-6">
-              <FaCity className="h-8 w-8 text-blue-700" />
+              <FaCity className="h-8 w-8 text-blue-800" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">Urban Poverty and Urban Renewal</h3>
             <p className="text-brand-text leading-relaxed mb-6 flex-grow">
@@ -81,7 +81,7 @@ const About = () => {
         </div>
 
      
-        <div className="mt-20 bg-blue-900 text-white rounded-xl shadow-lg p-8 md:p-12 animate-fade-in-up">
+        <div className="mt-20  text-white bg-gradient-to-r from-gray-900 to-slate-800 rounded-xl shadow-lg p-8 md:p-12 animate-fade-in-up">
           <div className="flex items-center mb-6">
             <div className="p-4 bg-white/20 rounded-full text-white mr-4">
               <FaBullseye className="h-8 w-8" />

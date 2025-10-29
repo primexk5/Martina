@@ -53,12 +53,12 @@ export default function MartinaFooter() {
 
   return (
     <div className="">
-      <footer className="w-full bg-gradient-to-r from-blue-900 to-slate-800 text-white relative overflow-hidden">
+      <footer className="w-full bg-gradient-to-r from-gray-900 to-slate-800 text-white relative overflow-hidden">
         {/* Animated top border */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 via-emerald-400 to-cyan-400 animate-pulse"></div>
         
         {/* Main footer content */}
-        <div className="max-w-7xl lg:mx-44 px-6 py-10 lg:py-16">
+        <div className="max-w-7xl lg:mx-72 px-6 py-10 lg:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             
             {/* About Section */}
