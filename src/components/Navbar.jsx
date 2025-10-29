@@ -40,25 +40,50 @@ const Navbar = () => {
             <li className='cursor-pointer hover:text-blue-800'>About</li>
 
             {/* Services with Dropdown */}
-            <li
-              className='relative cursor-pointer hover:text-blue-800 flex items-center gap-1'
-              onClick={() => setShowServices(!showServices)}
-            >
-              Services <MdOutlineArrowDropDown className={`transition-transform duration-200 ${showServices ? 'rotate-180' : ''}`} />
+          <div className='flex items-center justify-center text-center lg:justify-start'>
+  <li
+    className='relative cursor-pointer hover:text-blue-800 flex items-center gap-1'
+    onClick={() => setShowServices(!showServices)}
+  >
+    Services
+    <MdOutlineArrowDropDown
+      className={`transition-transform duration-200 ${
+        showServices ? 'rotate-180' : ''
+      }`}
+    />
 
-              {/* Dropdown menu */}
-              {showServices && (
-                <ul className='absolute top-6 left-0 bg-white shadow-lg rounded-md py-2 w-[500px] z-20'>
-                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>Urban Poverty and Urban Renewal</li>
-                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>Land Use and Agricultural Development Schemes</li>
-                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'> Overview</li>
-                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'> Research and Social Action</li>
-                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'> Our Objectives and Mission</li>
-                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'> Comparative and Collaborative Work</li>
-                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'> Martina Centre’s Micro Finance & Poverty Alleviation Scheme</li>
-                </ul>
-              )}
-            </li>
+    {/* Dropdown menu */}
+    {showServices && (
+      <ul
+        className='absolute top-6 left-1/2 transform -translate-x-1/2 lg:left-0 lg:translate-x-0 
+                   bg-white shadow-lg rounded-md py-2 w-[250px] lg:w-[500px] z-20'
+      >
+        <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>
+          Urban Poverty and Urban Renewal
+        </li>
+        <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>
+          Land Use and Agricultural Development Schemes
+        </li>
+        <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>
+          Overview
+        </li>
+        <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>
+          Research and Social Action
+        </li>
+        <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>
+          Our Objectives and Mission
+        </li>
+        <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>
+          Comparative and Collaborative Work
+        </li>
+        <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>
+          Martina Centre’s Micro Finance & Poverty Alleviation Scheme
+        </li>
+      </ul>
+    )}
+  </li>
+</div>
+
 
             <li className='cursor-pointer hover:text-blue-800'>Contact</li>
           </ul>

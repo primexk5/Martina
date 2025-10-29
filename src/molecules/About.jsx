@@ -81,7 +81,7 @@ const About = () => {
         </div>
 
      
-        <div className="mt-20 bg-blue-900 text-white rounded-xl shadow-lg p-8 md:p-12 animate-fade-in-up">
+        <div className="mt-20 bg-blue-900 text-white rounded-xl shadow-lg p-3 py-7 md:p-12 animate-fade-in-up">
           <div className="flex items-center mb-6">
             <div className="p-4 bg-white/20 rounded-full text-white mr-4">
               <FaBullseye className="h-8 w-8" />
