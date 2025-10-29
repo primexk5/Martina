@@ -40,15 +40,16 @@ const Navbar = () => {
             <li className='cursor-pointer hover:text-blue-800'>About</li>
 
             {/* Services with Dropdown */}
-            <li
-              className='relative cursor-pointer hover:text-blue-800 flex items-center gap-1'
+          <div className='flex items-center text-center'>
+              <li
+              className='relative cursor-pointer hover:text-blue-800 flex items-center text-center gap-1'
               onClick={() => setShowServices(!showServices)}
             >
               Services <MdOutlineArrowDropDown className={`transition-transform duration-200 ${showServices ? 'rotate-180' : ''}`} />
 
               {/* Dropdown menu */}
               {showServices && (
-                <ul className='absolute top-6 left-0 bg-white shadow-lg rounded-md py-2 w-[500px] z-20'>
+                <ul className='absolute top-6 left-0 bg-white shadow-lg rounded-md py-2 lg:w-[500px] z-20'>
                   <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>Urban Poverty and Urban Renewal</li>
                   <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'>Land Use and Agricultural Development Schemes</li>
                   <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700'> Overview</li>
@@ -59,6 +60,7 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
+          </div>
 
             <li className='cursor-pointer hover:text-blue-800'>Contact</li>
           </ul>
