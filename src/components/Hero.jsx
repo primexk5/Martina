@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="w-full bg-blue-50 text-gray-800">
       <div className="max-w-7xl mx-auto flex flex-col justify-center items-center text-center px-6 py-24 md:py-32">
         
-        <div className="bg-blue-600 text-white  w-64 h-64 flex items-center justify-center font-black text-6xl mb-8">
+        <div className="bg-blue-900 text-white  w-64 h-64 flex items-center justify-center font-black text-6xl mb-8">
           MC
         </div>
 
