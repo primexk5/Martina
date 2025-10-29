@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './molecules/About'
-import Objectives from './molecules/Objectives'
+import ObjectivesMission from './components/ObjectivesMission'
 import Footer from './components/Footer'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Objectives />
+      <ObjectivesMission />
       <Footer />
     </>
   )
