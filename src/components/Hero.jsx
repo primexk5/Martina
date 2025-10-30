@@ -48,6 +48,8 @@ const Hero = () => {
               {images.map((src, index) => (
                 <div key={index} className={`rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105 ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
                   <img
+                      loading="lazy"
+                      decoding="async"
                       src={src}
                       alt={`Martina Centre activity ${index + 1}`}
                       className="w-full h-full object-cover"
@@ -60,6 +62,8 @@ const Hero = () => {
               <div className="bg-gray-200 border border-gray-300 p-4 rounded-xl shadow-sm w-full max-w-xs">
                 <p className="text-blue-900 text-sm font-semibold mb-2">Our Work Aligns With</p>
                 <img 
+                  loading="lazy"
+                  decoding="async"
                   src="/logos.jpg" 
                   alt="UN Sustainable Development Goals" 
                   className="w-full h-auto rounded" 
@@ -68,6 +72,8 @@ const Hero = () => {
               <div className="bg-gray-200 border border-gray-300 p-4 rounded-xl shadow-sm w-full max-w-xs">
                 <p className="text-blue-900 text-sm font-semibold mb-2">Our Focus Area</p>
                 <img 
+                loading="lazy"
+                      decoding="async"
                   src="/Nigeria.jpeg" 
                   alt="Map of Nigeria" 
                   className="w-full h-auto rounded" 
