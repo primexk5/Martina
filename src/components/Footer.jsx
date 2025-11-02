@@ -58,7 +58,7 @@ export default function MartinaFooter() {
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 via-emerald-400 to-cyan-400 animate-pulse"></div>
         
         {/* Main footer content */}
-        <div className="max-w-7xl lg:mx-72 px-6 py-10 lg:py-16">
+        <div className=" lg:mx-60 px-6 py-10 lg:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             
             {/* About Section */}

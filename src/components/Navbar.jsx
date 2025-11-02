@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-900 to-slate-800 border-b-4 border-green-600  z-50 shadow-md">
-      <nav className='lg:flex-row lg:flex items-center justify-between lg:p-5 lg:px-80 relative'>
+      <nav className='lg:flex-row lg:flex items-center justify-between lg:p-5 lg:px-60 relative'>
 
         {/* Logo and mobile toggle */}
         <div className='flex items-center justify-between p-3 lg:p-0'>

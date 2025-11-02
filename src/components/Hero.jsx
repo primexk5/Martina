@@ -1,90 +1,90 @@
-import React from 'react';
+import React from 'react'
+import { FaArrowRight } from 'react-icons/fa'
 
 const Hero = () => {
   const images = [
-    "/farm1.jpeg",
-    "/farm2.jpeg",
-    "/hause.jpeg",
-    "/meeting.jpeg",
-    "/people1.jpeg",
-    "/meeting2.jpeg"
-  ];
+    '/farm1.jpeg',
+    '/farm2.jpeg',
+    '/hause.jpeg',
+    '/meeting.jpeg',
+    '/people1.jpeg',
+    '/meeting2.jpeg',
+  ]
 
   return (
-    <div id="home" className="w-full bg-gray-100 text-gray-800">
-      <div className="max-w-7xl mx-auto flex flex-col justify-center items-center text-center px-6 py-24 md:py-32">
-        
-        <div className="bg-slate-800 text-white  w-64 h-64 flex items-center justify-center font-black text-6xl mb-8">
-          MC
-        </div>
+    <div
+      id="home"
+      className="relative w-full bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/farm5.avif')" }}
+    >
+      {/* Dark overlay for text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
 
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-gray-900">
-          The Martina Centre for Sustainable Development
-        </h1>
-        
-        <p className="text-lg md:text-xl font-light text-gray-600 mb-8">
-          (A Non-Governmental Organization / Micro Finance Institution)
-        </p>
+      <div className="relative z-10  mx-auto px-6 lg:px-60 py-24 sm:py-32 lg:py-40">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left Column: Text Content */}
+          <div className="text-center lg:text-left animate-fade-in-up">
+            <p className="text-base font-semibold text-emerald-400 tracking-wider uppercase">
+              Martina Centre for Sustainable Development
+            </p>
+            <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg">
+              Empowering Nigerian Communities
+            </h1>
+            <p className="mt-6 text-lg md:text-xl leading-relaxed text-white/90 max-w-2xl mx-auto lg:mx-0">
+              A Non-Governmental Organization and Micro-Finance Institution
+              dedicated to reducing poverty and fostering resilience in rural
+              Nigeria.
+            </p>
 
-        <div className="bg-gray-200 border border-gray-300 px-6 py-4 rounded-xl shadow-sm mb-12 max-w-2xl">
-          <p className="text-sm md:text-base font-semibold uppercase tracking-wider text-blue-600">
-            In Special Consultative Status
-          </p>
-          <p className="text-lg md:text-xl font-bold text-blue-900 mt-1">
-            With United Nations Economic & Social Commission
-          </p>
-          <p className="text-sm md:text-base font-light text-gray-600 mt-1">
-            ECOSOC
-          </p>
-        </div>
-
-        <p className="text-xl md:text-2xl font-medium max-w-4xl leading-relaxed mb-16 text-blue-800">
-          WORKING TOWARDS INSECURITY & POVERTY REDUCTION IN THE RURAL COMMUNITIES OF NIGERIA
-        </p>
-
-        <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mt-10">
-
-            <div className="lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-4">
-              {images.map((src, index) => (
-                <div key={index} className={`rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105 ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
-                  <img
-                      loading="lazy"
-                      decoding="async"
-                      src={src}
-                      alt={`Martina Centre activity ${index + 1}`}
-                      className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a
+                href="#about"
+                className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-3 text-base font-semibold text-white shadow-lg hover:bg-emerald-600 transition-transform transform hover:scale-105"
+              >
+                Discover Our Mission
+                <FaArrowRight className="ml-2 h-4 w-4" />
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-full bg-white/20 px-8 py-3 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/30 transition"
+              >
+                Get Involved
+              </a>
             </div>
 
-            <div className="flex flex-col items-center gap-8 w-full">
-              <div className="bg-gray-200 border border-gray-300 p-4 rounded-xl shadow-sm w-full max-w-xs">
-                <p className="text-blue-900 text-sm font-semibold mb-2">Our Work Aligns With</p>
-                <img 
+            <div className="mt-12 border-l-4 border-emerald-500 pl-4">
+              <p className="text-sm font-semibold uppercase tracking-wider text-white/80">
+                In Special Consultative Status
+              </p>
+              <p className="text-lg font-bold text-white mt-1">
+                With United Nations ECOSOC
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column: Image Gallery */}
+          <div className="hidden lg:grid grid-cols-3 gap-4 animate-fade-in-up animation-delay-300">
+            {images.map((src, index) => (
+              <div
+                key={index}
+                className={`rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 transform transition-transform duration-300 hover:scale-105 hover:rotate-[-2deg] ${
+                  index === 0 ? 'col-span-2 row-span-2' : ''
+                }`}
+              >
+                <img
                   loading="lazy"
                   decoding="async"
-                  src="/logos.jpg" 
-                  alt="UN Sustainable Development Goals" 
-                  className="w-full h-auto rounded" 
+                  src={src}
+                  alt={`Martina Centre activity ${index + 1}`}
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-gray-200 border border-gray-300 p-4 rounded-xl shadow-sm w-full max-w-xs">
-                <p className="text-blue-900 text-sm font-semibold mb-2">Our Focus Area</p>
-                <img 
-                loading="lazy"
-                      decoding="async"
-                  src="/Nigeria.jpeg" 
-                  alt="Map of Nigeria" 
-                  className="w-full h-auto rounded" 
-                />
-              </div>
-            </div>
+            ))}
+          </div>
         </div>
-
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
