@@ -15,7 +15,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20 animate-fade-in-up">
-          <h2 className="text-blue-400 font-semibold uppercase text-4xl tracking-wider">
+          <h2 className="text-blue-400 font-semibold uppercase  tracking-wider">
             Who We Are
           </h2>
           <h3 className="mt-3 text-4xl sm:text-5xl font-extrabold text-white">
